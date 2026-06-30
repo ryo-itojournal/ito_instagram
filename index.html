@@ -2,21 +2,90 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>伊東Instagram提案</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>伊東Instagram改善提案</title>
+<style>
+body{
+  margin:0;
+  font-family:"Noto Sans JP",sans-serif;
+  background:#f7f3ea;
+  color:#333;
+}
+header{
+  background:#fff;
+  text-align:center;
+  padding:42px 20px;
+}
+header h1{
+  margin:0;
+  font-size:30px;
+}
+header p{
+  color:#666;
+}
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:30px 20px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+.card{
+  background:#fff;
+  border-radius:20px;
+  padding:28px;
+  text-decoration:none;
+  color:#333;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+.card h2{
+  margin:0 0 10px;
+}
+.card p{
+  color:#666;
+  line-height:1.7;
+}
+@media(max-width:700px){
+  .grid{grid-template-columns:1fr;}
+}
+</style>
 </head>
 
 <body>
 
-<h1>伊東Instagram提案</h1>
+<header>
+<h1>伊東Instagram改善提案</h1>
+<p>部門ごとに事業者のInstagram改善案を整理</p>
+</header>
 
-<h2>部門一覧</h2>
+<div class="container">
+<div class="grid">
 
-<ul>
-<li><a href="okashi/leman.html">お菓子ぃ共和国</a></li>
-<li><a href="iimono/usami.html">いとうのいいもの</a></li>
-<li><a href="jizakana/index.html">地魚王国</a></li>
-<li><a href="furusato/index.html">ふるさと納税</a></li>
-</ul>
+<a class="card" href="group/iimono/">
+<h2>いとうのいいもの</h2>
+<p>伊東ブランド・特産品・クラフト商品など</p>
+</a>
+
+<a class="card" href="group/jizakana/">
+<h2>地魚王国</h2>
+<p>鮮魚店・水産加工・飲食店など</p>
+</a>
+
+<a class="card" href="group/okashi/">
+<h2>お菓子ぃ共和国</h2>
+<p>洋菓子・和菓子・焼菓子など</p>
+</a>
+
+<a class="card" href="group/furusato/">
+<h2>ふるさと納税</h2>
+<p>返礼品・宿泊・体験・地域産品など</p>
+</a>
+
+</div>
+</div>
 
 </body>
 </html>
