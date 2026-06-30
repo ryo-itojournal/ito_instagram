@@ -4,88 +4,136 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>伊東Instagram改善提案</title>
+
 <style>
+
 body{
-  margin:0;
-  font-family:"Noto Sans JP",sans-serif;
-  background:#f7f3ea;
-  color:#333;
+    margin:0;
+    font-family:"Noto Sans JP",sans-serif;
+    background:#f7f3ea;
+    color:#333;
 }
+
 header{
-  background:#fff;
-  text-align:center;
-  padding:42px 20px;
+    background:#fff;
+    padding:50px 20px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
 }
+
 header h1{
-  margin:0;
-  font-size:30px;
+    margin:0;
+    font-size:36px;
 }
+
 header p{
-  color:#666;
+    margin-top:10px;
+    color:#666;
 }
+
 .container{
-  max-width:900px;
-  margin:auto;
-  padding:30px 20px;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
 }
+
 .grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
+
 .card{
-  background:#fff;
-  border-radius:20px;
-  padding:28px;
-  text-decoration:none;
-  color:#333;
-  box-shadow:0 6px 18px rgba(0,0,0,.08);
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    text-decoration:none;
+    color:#333;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    transition:.2s;
 }
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
 .card h2{
-  margin:0 0 10px;
+    margin-top:0;
+    margin-bottom:10px;
 }
+
 .card p{
-  color:#666;
-  line-height:1.7;
+    color:#666;
+    line-height:1.8;
 }
-@media(max-width:700px){
-  .grid{grid-template-columns:1fr;}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+    font-size:13px;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
+
 <h1>伊東Instagram改善提案</h1>
-<p>部門ごとに事業者のInstagram改善案を整理</p>
+
+<p>
+事業者ごとのInstagramプロフィール・投稿・リール改善提案を整理
+</p>
+
 </header>
 
 <div class="container">
+
 <div class="grid">
 
 <a class="card" href="group/iimono/">
-<h2>いとうのいいもの</h2>
-<p>伊東ブランド・特産品・クラフト商品など</p>
+    <h2>🏆 いとうのいいもの</h2>
+    <p>
+    伊東ブランド認定事業者<br>
+    商品・人・ストーリーを発信
+    </p>
 </a>
 
 <a class="card" href="group/jizakana/">
-<h2>地魚王国</h2>
-<p>鮮魚店・水産加工・飲食店など</p>
+    <h2>🐟 地魚王国</h2>
+    <p>
+    鮮魚店・水産加工・飲食店<br>
+    伊東の魚文化を発信
+    </p>
 </a>
 
 <a class="card" href="group/okashi/">
-<h2>お菓子ぃ共和国</h2>
-<p>洋菓子・和菓子・焼菓子など</p>
+    <h2>🍰 お菓子ぃ共和国</h2>
+    <p>
+    洋菓子・和菓子・焼菓子<br>
+    伊東のスイーツ文化を発信
+    </p>
 </a>
 
 <a class="card" href="group/furusato/">
-<h2>ふるさと納税</h2>
-<p>返礼品・宿泊・体験・地域産品など</p>
+    <h2>🎁 ふるさと納税</h2>
+    <p>
+    宿泊・体験・特産品<br>
+    返礼品事業者の魅力を発信
+    </p>
 </a>
 
 </div>
+
 </div>
+
+<footer>
+
+© Ito Instagram
+
+</footer>
 
 </body>
 </html>
