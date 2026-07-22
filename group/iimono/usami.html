@@ -7,164 +7,245 @@
 <title>宇佐美麦酒｜Instagram改善提案</title>
 
 <style>
-
 body{
-margin:0;
-font-family:"Noto Sans JP",sans-serif;
-background:#f7f3ea;
-color:#333;
+  margin:0;
+  font-family:"Noto Sans JP","Hiragino Sans",sans-serif;
+  background:#f7f3ea;
+  color:#333;
 }
 
 header{
-background:#fff;
-padding:40px 20px;
-text-align:center;
-box-shadow:0 2px 10px rgba(0,0,0,.05);
+  background:#fff;
+  padding:44px 20px;
+  text-align:center;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
 }
 
 header h1{
-margin:0;
-font-size:30px;
+  margin:0;
+  font-size:32px;
 }
 
 header p{
-margin-top:10px;
-color:#666;
+  margin-top:10px;
+  color:#666;
+  font-size:15px;
 }
 
 .container{
-max-width:1200px;
-margin:auto;
-padding:24px;
-}
-
-.card{
-background:#fff;
-border-radius:20px;
-padding:24px;
-box-shadow:0 6px 18px rgba(0,0,0,.08);
-}
-
-.company-header{
-display:flex;
-align-items:center;
-gap:16px;
-margin-bottom:20px;
-}
-
-.logo{
-width:70px;
-height:70px;
-border-radius:50%;
-background:#b9770e;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-}
-
-.company-header h2{
-margin:0;
-font-size:28px;
-}
-
-.company-header span{
-color:#777;
-font-size:14px;
-}
-
-.box{
-padding:18px;
-border-radius:12px;
-margin-bottom:16px;
-line-height:1.9;
-}
-
-.current{
-background:#eef5ff;
-border-left:5px solid #4f7cff;
-}
-
-.proposal{
-background:#fff8dc;
-border-left:5px solid #f0b400;
-}
-
-.image-area{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-margin-top:20px;
-}
-
-.image-box{
-min-height:260px;
-border:2px dashed #ccc;
-border-radius:14px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:#fafafa;
-color:#888;
-padding:20px;
-}
-
-.point{
-margin-top:20px;
-background:#f2fbf5;
-border-left:5px solid #48a868;
-padding:16px;
-border-radius:12px;
-line-height:1.8;
-}
-
-.links{
-margin-top:20px;
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-}
-
-.links a{
-background:#222;
-color:#fff;
-text-decoration:none;
-padding:10px 16px;
-border-radius:999px;
-}
-
-.links a:hover{
-opacity:.8;
+  max-width:1180px;
+  margin:auto;
+  padding:28px 20px 50px;
 }
 
 .back{
-display:inline-block;
-margin-bottom:20px;
-text-decoration:none;
-color:#666;
+  display:inline-block;
+  margin-bottom:22px;
+  text-decoration:none;
+  color:#666;
 }
 
-footer{
-text-align:center;
-padding:30px;
-color:#777;
-font-size:12px;
-}
-
-@media(max-width:768px){
-
-.image-area{
-grid-template-columns:1fr;
+.card{
+  background:#fff;
+  border-radius:22px;
+  padding:26px;
+  margin-bottom:26px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
 
 .company-header{
-flex-direction:column;
-align-items:flex-start;
+  display:flex;
+  align-items:center;
+  gap:18px;
 }
 
+.logo{
+  width:76px;
+  height:76px;
+  border-radius:50%;
+  background:#b9770e;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:34px;
 }
 
+.company-header h2{
+  margin:0;
+  font-size:30px;
+}
+
+.company-header span{
+  color:#777;
+  font-size:14px;
+}
+
+.section-title{
+  font-size:22px;
+  margin:0 0 18px;
+}
+
+.box{
+  padding:18px;
+  border-radius:14px;
+  line-height:1.9;
+  margin-bottom:16px;
+}
+
+.current{
+  background:#eef5ff;
+  border-left:5px solid #4f7cff;
+}
+
+.proposal{
+  background:#fff8dc;
+  border-left:5px solid #f0b400;
+}
+
+.name-proposal{
+  background:#f5f2ff;
+  border-left:5px solid #8467d7;
+}
+
+.point{
+  background:#f2fbf5;
+  border-left:5px solid #48a868;
+}
+
+.grid2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.image-box{
+  min-height:250px;
+  border:2px dashed #ccc;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:#fafafa;
+  color:#888;
+  padding:20px;
+  line-height:1.8;
+}
+
+.content-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.content-card{
+  background:#fafafa;
+  border-radius:16px;
+  padding:20px;
+  border:1px solid #eee;
+}
+
+.content-card h3{
+  margin:0 0 10px;
+  font-size:18px;
+}
+
+.content-card p{
+  margin:0;
+  color:#666;
+  line-height:1.8;
+}
+
+.timeline{
+  display:grid;
+  gap:12px;
+}
+
+.timeline-item{
+  display:grid;
+  grid-template-columns:90px 1fr;
+  gap:16px;
+  background:#fafafa;
+  padding:14px 16px;
+  border-radius:12px;
+}
+
+.time{
+  font-weight:bold;
+  color:#8a5a00;
+}
+
+.theme-list{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-top:18px;
+}
+
+.theme{
+  background:#fff8dc;
+  border-radius:12px;
+  padding:14px;
+  line-height:1.7;
+}
+
+.design-list{
+  line-height:2;
+}
+
+.links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.links a{
+  background:#222;
+  color:#fff;
+  text-decoration:none;
+  padding:11px 18px;
+  border-radius:999px;
+}
+
+.links a:hover{
+  opacity:.8;
+}
+
+.summary{
+  background:#fff8dc;
+  border-radius:18px;
+  padding:24px;
+  line-height:2;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#777;
+  font-size:12px;
+}
+
+@media(max-width:768px){
+  header h1{
+    font-size:24px;
+  }
+
+  .company-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .grid2,
+  .content-grid,
+  .theme-list{
+    grid-template-columns:1fr;
+  }
+
+  .timeline-item{
+    grid-template-columns:1fr;
+    gap:5px;
+  }
+}
 </style>
 
 </head>
@@ -172,88 +253,300 @@ align-items:flex-start;
 <body>
 
 <header>
-<h1>🍺 宇佐美麦酒｜Instagram改善提案</h1>
-<p>いとうのいいもの</p>
+  <h1>🍺 宇佐美麦酒｜Instagram改善提案</h1>
+  <p>いとうのいいもの｜プロフィール・投稿・リール改善提案</p>
 </header>
 
 <div class="container">
 
-<a href="../../index.html" class="back">
-← トップページへ戻る
-</a>
+<a href="index.html" class="back">← いとうのいいもの一覧へ戻る</a>
+
+<!-- 基本情報 -->
 
 <section class="card">
 
-<div class="company-header">
+  <div class="company-header">
+    <div class="logo">🍺</div>
 
-<div class="logo">
-🍺
-</div>
-
+```
 <div>
-<h2>宇佐美麦酒製造</h2>
-<span>@usamibrewery</span>
+  <h2>宇佐美麦酒製造</h2>
+  <span>@usamibrewery</span>
 </div>
+```
 
-</div>
+  </div>
+
+</section>
+
+<!-- プロフィール改善 -->
+
+<section class="card">
+
+<h2 class="section-title">01｜プロフィール改善</h2>
 
 <div class="box current">
-
 <strong>現在のプロフィール</strong><br>
+東伊豆、宇佐美でクラフトビール
+（Usami Beer、伊豆の地ビール、カレーラバーエールなど）
+をつくっています。
+</div>
 
-東伊豆、宇佐美でクラフトビール（Usami Beer、伊豆の地ビール、カレーラバーエールなど）をつくっています。
-
+<div class="box name-proposal">
+<strong>プロフィール名称 改善案</strong><br>
+宇佐美麦酒｜伊豆・宇佐美のクラフトビール
 </div>
 
 <div class="box proposal">
+<strong>プロフィール文 改善案</strong><br>
 
-<strong>プロフィール改善案</strong><br>
-
-🍺 宇佐美麦酒製造 🍺<br>
 🍺 伊豆・宇佐美のクラフトビール醸造所<br>
-🍺 海洋深層水仕込みのエールビール<br>
-🍺 宇佐美の自然と魅力を一杯に<br>
-🌐 ONLINE SHOP ↓
+● 海洋深層水仕込みのエールビール<br>
+● ビールづくりの舞台裏と商品情報を発信<br>
+📍 静岡県伊東市宇佐美<br>
+▼ ONLINE SHOP
 
 </div>
 
-<div class="image-area">
+<div class="box point">
+<strong>改善ポイント</strong><br>
+✅ 「どこで」「何を」「どんな特徴があるか」を3秒で理解できる構成へ。<br>
+✅ 「伊豆」「宇佐美」「クラフトビール」など検索されやすい言葉を明確化。<br>
+✅ 商品紹介だけでなく「このアカウントで何を発信するか」も記載。<br>
+✅ オンラインショップへの導線を分かりやすくする。
+</div>
+
+</section>
+
+<!-- 現在と改善後 -->
+
+<section class="card">
+
+<h2 class="section-title">02｜Instagram画面イメージ</h2>
+
+<div class="grid2">
 
 <div>
-
-<h3>現在のInstagramイメージ</h3>
-
+<h3>現在のInstagram</h3>
 <div class="image-box">
-画像名：images/usami-current.png
+現在のInstagramスクリーンショット<br>
+images/usami-current.png
 </div>
-
 </div>
 
 <div>
-
 <h3>改善後の参考イメージ</h3>
-
 <div class="image-box">
-画像名：images/usami-sample.png
+改善後のプロフィール・投稿イメージ<br>
+images/usami-sample.png
+</div>
 </div>
 
 </div>
 
+</section>
+
+<!-- 投稿の4本柱 -->
+
+<section class="card">
+
+<h2 class="section-title">03｜投稿内容の4本柱</h2>
+
+<div class="content-grid">
+
+<div class="content-card">
+<h3>🍺 01｜商品</h3>
+<p>
+ゴールデンエール、セゾンなどの商品紹介。<br>
+味・香り・おすすめの飲み方・料理との組み合わせまで紹介。
+</p>
 </div>
 
-<div class="point">
+<div class="content-card">
+<h3>⚙️ 02｜仕事</h3>
+<p>
+麦芽投入、ろ過、ホップ投入、発酵、瓶詰めなど、
+普段見ることのできない醸造工程を発信。
+</p>
+</div>
 
-<strong>提案ポイント</strong><br>
+<div class="content-card">
+<h3>👤 03｜ヒト</h3>
+<p>
+醸造家やスタッフの仕事風景、こだわり、ビールづくりへの想いを紹介。
+</p>
+</div>
 
-✅ 「宇佐美」「クラフトビール」「海洋深層水」を明確化。<br>
-
-✅ 初見でも何のお店か分かるプロフィールへ改善。<br>
-
-✅ 地域性と商品の特徴を同時に訴求。<br>
-
-✅ ECサイト・ふるさと納税導線との相性も良い構成。
+<div class="content-card">
+<h3>🌊 04｜宇佐美</h3>
+<p>
+宇佐美の海・山・地域イベント・地元とのつながりを発信し、
+「宇佐美でつくる理由」を伝える。
+</p>
+</div>
 
 </div>
+
+</section>
+
+<!-- リール -->
+
+<section class="card">
+
+<h2 class="section-title">04｜Instagramリール提案</h2>
+
+<p>
+<strong>方向性：</strong>
+「商品紹介」ではなく、
+<strong>ビールが生まれるまでの30秒ドキュメンタリー</strong>
+として見せる。
+</p>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="time">0〜3秒</div>
+<div>
+<strong>HOOK</strong><br>
+ビールを注ぐ瞬間・泡・グラスのアップ
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="time">3〜6秒</div>
+<div>
+<strong>ヒト</strong><br>
+醸造家の表情・タンクを確認する様子
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="time">6〜12秒</div>
+<div>
+<strong>仕込み</strong><br>
+麦芽投入・ろ過・設備・手元
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="time">12〜18秒</div>
+<div>
+<strong>醸造工程</strong><br>
+ホップ投入・発酵タンク・酵母など
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="time">18〜24秒</div>
+<div>
+<strong>商品</strong><br>
+瓶詰め・ラベル・完成したビール
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="time">24〜30秒</div>
+<div>
+<strong>想い・締め</strong><br>
+完成したビール＋宇佐美の風景＋ブランド名
+</div>
+</div>
+
+</div>
+
+<div class="theme-list">
+
+<div class="theme">
+<strong>テーマ①</strong><br>
+一杯のビールができるまで
+</div>
+
+<div class="theme">
+<strong>テーマ②</strong><br>
+宇佐美でビールをつくる理由
+</div>
+
+<div class="theme">
+<strong>テーマ③</strong><br>
+海洋深層水から生まれるクラフトビール
+</div>
+
+<div class="theme">
+<strong>テーマ④</strong><br>
+醸造家の一日
+</div>
+
+</div>
+
+</section>
+
+<!-- デザイン -->
+
+<section class="card">
+
+<h2 class="section-title">05｜投稿デザイン・見せ方</h2>
+
+<div class="design-list">
+
+✅ サムネイルは「完成したビール＋人」を基本にする<br>
+
+✅ 1投稿1テーマに絞る<br>
+
+✅ 写真だけでなく動画・手元・現場音を活用する<br>
+
+✅ 同じカットは1〜3秒程度でテンポよく編集<br>
+
+✅ テロップは長文にせず、1画面1メッセージ<br>
+
+✅ 商品写真だけでなく、仕込み・設備・醸造家を積極的に見せる<br>
+
+✅ 全体の色味・文字・サムネイルを統一し、アカウント全体をブランド化
+
+</div>
+
+</section>
+
+<!-- まとめ -->
+
+<section class="card">
+
+<h2 class="section-title">06｜改善方針まとめ</h2>
+
+<div class="summary">
+
+<strong>現在：</strong><br>
+「クラフトビールを作っている会社」という情報発信が中心
+
+<br><br>
+
+<strong>改善後：</strong><br>
+「宇佐美で、誰が、どのように、どんな想いでビールをつくっているのか」
+まで伝えるアカウントへ。
+
+<br><br>
+
+<strong>目指す方向性：</strong><br>
+
+商品
+→ ヒト
+→ 仕事
+→ 地域
+→ ストーリー
+
+<br><br>
+
+単なる商品紹介ではなく、 <strong>「宇佐美麦酒を好きになる理由」をつくるInstagram</strong>
+を目指す。
+
+</div>
+
+</section>
+
+<!-- リンク -->
+
+<section class="card">
+
+<h2 class="section-title">07｜リンク</h2>
 
 <div class="links">
 
@@ -277,4 +570,3 @@ Instagramを見る
 
 </body>
 </html>
-
