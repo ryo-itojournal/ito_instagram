@@ -167,6 +167,14 @@
     margin-bottom:14px;
   }
   .profile-card p{margin:0; font-size:14.5px; color:var(--ink);}
+  .profile-card .link{margin-top:10px; font-size:13px; color:var(--amber-deep); text-decoration:underline; word-break:break-all;}
+  .stat-row{
+    display:flex; gap:26px; margin-bottom:16px;
+    padding-bottom:16px; border-bottom:1px solid var(--line);
+  }
+  .stat-row div{display:flex; flex-direction:column;}
+  .stat-row b{font-size:16px; font-family:"Zen Old Mincho",serif;}
+  .stat-row span{font-size:11px; color:var(--ink-soft); margin-top:2px;}
   .profile-card ul{margin:14px 0 0; padding-left:0; list-style:none;}
   .profile-card li{font-size:14px; margin-bottom:6px; padding-left:1.1em; position:relative; color:var(--ink);}
   .profile-card li::before{content:"●"; position:absolute; left:0; font-size:7px; top:.55em; color:var(--amber-deep);}
@@ -183,18 +191,23 @@
   /* ---------- 02 screens ---------- */
   .screens{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
   .screen-card{
-    border:1px dashed var(--line);
-    border-radius:4px;
-    aspect-ratio:9/13;
-    display:flex; align-items:center; justify-content:center; flex-direction:column;
-    gap:10px;
-    background:repeating-linear-gradient(135deg, rgba(36,27,18,.03) 0 10px, transparent 10px 20px);
-    color:var(--ink-soft);
-    font-family:"Space Mono", monospace;
-    font-size:12px;
-    text-align:center;
-    padding:20px;
+    border:1px solid var(--line);
+    border-radius:10px;
+    aspect-ratio:320/460;
+    overflow:hidden;
+    background:var(--foam);
+    box-shadow:0 18px 40px -22px rgba(36,27,18,.35);
   }
+  .screen-card svg{width:100%; height:100%; display:block;}
+  .screen-caption{
+    margin-top:14px;
+    text-align:center;
+    font-family:"Space Mono",monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    letter-spacing:.04em;
+  }
+  .screen-col{display:flex; flex-direction:column;}
 
   /* ---------- 03 four pillars ---------- */
   .pillars{
@@ -402,11 +415,23 @@
   <div class="profile-grid">
     <div class="profile-card before">
       <div class="label">Before — 現在のプロフィール</div>
-      <p>東伊豆、宇佐美でクラフトビール（Usami Beer、伊豆の地ビール、カレーラバーエールなど）をつくっています。</p>
+      <div class="handle">宇佐美麦酒製造</div>
+      <div class="stat-row">
+        <div><b>86</b><span>投稿</span></div>
+        <div><b>626</b><span>フォロワー</span></div>
+        <div><b>525</b><span>フォロー中</span></div>
+      </div>
+      <p>東伊豆、宇佐美でクラフトビール（Usami Beer, 伊豆の地ビール, カレーラバーエールなど）をつくっています。</p>
+      <p class="link">usami-jibeer.com</p>
     </div>
     <div class="profile-card after">
       <div class="label">After — 改善案</div>
       <div class="handle">宇佐美麦酒｜伊豆・宇佐美のクラフトビール</div>
+      <div class="stat-row">
+        <div><b>86</b><span>投稿</span></div>
+        <div><b>626</b><span>フォロワー</span></div>
+        <div><b>525</b><span>フォロー中</span></div>
+      </div>
       <ul>
         <li>🍺 伊豆・宇佐美のクラフトビール醸造所</li>
         <li>海洋深層水仕込みのエールビール</li>
@@ -434,8 +459,111 @@
     </div>
   </div>
   <div class="screens">
-    <div class="screen-card">現在のInstagramスクリーンショットをここに挿入<br>(usami-current.png)</div>
-    <div class="screen-card">改善後のプロフィール・投稿イメージをここに挿入<br>(usami-sample.png)</div>
+    <div class="screen-col">
+      <div class="screen-card">
+        <svg viewBox="0 0 320 460" xmlns="http://www.w3.org/2000/svg" font-family="'Zen Kaku Gothic New', sans-serif">
+          <rect x="0" y="0" width="320" height="460" fill="#FFFBF0"/>
+          <circle cx="288" cy="24" r="1.6" fill="#5B5142"/><circle cx="278" cy="24" r="1.6" fill="#5B5142"/><circle cx="268" cy="24" r="1.6" fill="#5B5142"/>
+          <text x="160" y="28" text-anchor="middle" font-size="12" fill="#241B12">usamibrewery</text>
+          <line x1="0" y1="40" x2="320" y2="40" stroke="#E7DFC9"/>
+
+          <circle cx="50" cy="80" r="27" fill="#E4D6B6" stroke="#E7DFC9"/>
+          <text x="50" y="87" text-anchor="middle" font-size="20">🍺</text>
+
+          <text x="118" y="72" text-anchor="middle" font-size="15" font-weight="700" fill="#241B12">86</text>
+          <text x="118" y="88" text-anchor="middle" font-size="9" fill="#5B5142">投稿</text>
+          <text x="196" y="72" text-anchor="middle" font-size="15" font-weight="700" fill="#241B12">626</text>
+          <text x="196" y="88" text-anchor="middle" font-size="9" fill="#5B5142">フォロワー</text>
+          <text x="274" y="72" text-anchor="middle" font-size="15" font-weight="700" fill="#241B12">525</text>
+          <text x="274" y="88" text-anchor="middle" font-size="9" fill="#5B5142">フォロー中</text>
+
+          <text x="20" y="124" font-size="12.5" font-weight="700" fill="#241B12">宇佐美麦酒製造</text>
+
+          <text x="20" y="142" font-size="10.5" fill="#241B12">東伊豆、宇佐美でクラフトビール</text>
+          <text x="20" y="157" font-size="10.5" fill="#241B12">（Usami Beer, 伊豆の地ビール,</text>
+          <text x="20" y="172" font-size="10.5" fill="#241B12">カレーラバーエールなど）</text>
+          <text x="20" y="187" font-size="10.5" fill="#241B12">をつくっています。</text>
+          <text x="20" y="205" font-size="10.5" fill="#3B6E86" text-decoration="underline">usami-jibeer.com</text>
+
+          <rect x="20" y="218" width="280" height="26" rx="6" fill="none" stroke="#E7DFC9"/>
+          <text x="160" y="235" text-anchor="middle" font-size="10.5" fill="#5B5142">プロフィールを編集</text>
+
+          <line x1="0" y1="264" x2="320" y2="264" stroke="#E7DFC9"/>
+
+          <g>
+            <rect x="0"   y="270" width="105" height="63" fill="#C68A3D"/>
+            <rect x="107" y="270" width="105" height="63" fill="#4C6B58"/>
+            <rect x="214" y="270" width="106" height="63" fill="#8B4513"/>
+            <rect x="0"   y="335" width="105" height="63" fill="#D8CBAE"/>
+            <rect x="107" y="335" width="105" height="63" fill="#35586B"/>
+            <rect x="214" y="335" width="106" height="63" fill="#2B2118"/>
+            <rect x="0"   y="400" width="105" height="60" fill="#E3D5B8"/>
+            <rect x="107" y="400" width="105" height="60" fill="#9C7A4A"/>
+            <rect x="214" y="400" width="106" height="60" fill="#6B4226"/>
+          </g>
+        </svg>
+      </div>
+      <div class="screen-caption">Before — バラつきのあるフィード</div>
+    </div>
+
+    <div class="screen-col">
+      <div class="screen-card">
+        <svg viewBox="0 0 320 460" xmlns="http://www.w3.org/2000/svg" font-family="'Zen Kaku Gothic New', sans-serif">
+          <rect x="0" y="0" width="320" height="460" fill="#FFFBF0"/>
+          <circle cx="288" cy="24" r="1.6" fill="#5B5142"/><circle cx="278" cy="24" r="1.6" fill="#5B5142"/><circle cx="268" cy="24" r="1.6" fill="#5B5142"/>
+          <text x="160" y="28" text-anchor="middle" font-size="12" fill="#241B12">usamibrewery</text>
+          <line x1="0" y1="40" x2="320" y2="40" stroke="#E7DFC9"/>
+
+          <circle cx="50" cy="80" r="27" fill="#C8862E" stroke="#A8552B"/>
+          <text x="50" y="87" text-anchor="middle" font-size="20">🍺</text>
+
+          <text x="118" y="72" text-anchor="middle" font-size="15" font-weight="700" fill="#241B12">86</text>
+          <text x="118" y="88" text-anchor="middle" font-size="9" fill="#5B5142">投稿</text>
+          <text x="196" y="72" text-anchor="middle" font-size="15" font-weight="700" fill="#241B12">626</text>
+          <text x="196" y="88" text-anchor="middle" font-size="9" fill="#5B5142">フォロワー</text>
+          <text x="274" y="72" text-anchor="middle" font-size="15" font-weight="700" fill="#241B12">525</text>
+          <text x="274" y="88" text-anchor="middle" font-size="9" fill="#5B5142">フォロー中</text>
+
+          <text x="20" y="122" font-size="11.5" font-weight="700" fill="#241B12">宇佐美麦酒｜伊豆・宇佐美のクラフトビール</text>
+
+          <text x="20" y="140" font-size="10.5" fill="#241B12">🍺 伊豆・宇佐美のクラフトビール醸造所</text>
+          <text x="20" y="155" font-size="10.5" fill="#241B12">● 海洋深層水仕込みのエールビール</text>
+          <text x="20" y="170" font-size="10.5" fill="#241B12">● ビールづくりの舞台裏と商品情報を発信</text>
+          <text x="20" y="185" font-size="10.5" fill="#241B12">📍 静岡県伊東市宇佐美</text>
+
+          <rect x="20" y="196" width="128" height="24" rx="12" fill="none" stroke="#E7DFC9"/>
+          <text x="84" y="212" text-anchor="middle" font-size="10" fill="#5B5142">編集</text>
+          <rect x="156" y="196" width="144" height="24" rx="12" fill="#A8552B"/>
+          <text x="228" y="212" text-anchor="middle" font-size="10" fill="#FFFBF0">▼ ONLINE SHOP</text>
+
+          <g font-size="8.5" fill="#5B5142">
+            <circle cx="40"  cy="248" r="19" fill="#C8862E"/><text x="40"  y="254" text-anchor="middle" font-size="15">🍺</text>
+            <text x="40" y="278" text-anchor="middle">商品</text>
+            <circle cx="102" cy="248" r="19" fill="#1E3A45"/><text x="102" y="254" text-anchor="middle" font-size="15">⚙️</text>
+            <text x="102" y="278" text-anchor="middle">仕事</text>
+            <circle cx="164" cy="248" r="19" fill="#A8552B"/><text x="164" y="254" text-anchor="middle" font-size="15">👤</text>
+            <text x="164" y="278" text-anchor="middle">ヒト</text>
+            <circle cx="226" cy="248" r="19" fill="#35586B"/><text x="226" y="254" text-anchor="middle" font-size="15">🌊</text>
+            <text x="226" y="278" text-anchor="middle">宇佐美</text>
+          </g>
+
+          <line x1="0" y1="300" x2="320" y2="300" stroke="#E7DFC9"/>
+
+          <g>
+            <rect x="0"   y="306" width="105" height="58" fill="#C8862E"/><text x="52" y="340" text-anchor="middle" font-size="18">🍺</text>
+            <rect x="107" y="306" width="105" height="58" fill="#1E3A45"/><text x="159" y="340" text-anchor="middle" font-size="18">⚙️</text>
+            <rect x="214" y="306" width="106" height="58" fill="#A8552B"/><text x="266" y="340" text-anchor="middle" font-size="18">👤</text>
+            <rect x="0"   y="366" width="105" height="58" fill="#EDE3C8"/><text x="52" y="400" text-anchor="middle" font-size="18">🌊</text>
+            <rect x="107" y="366" width="105" height="58" fill="#C8862E"/><text x="159" y="400" text-anchor="middle" font-size="18">🍺</text>
+            <rect x="214" y="366" width="106" height="58" fill="#1E3A45"/><text x="266" y="400" text-anchor="middle" font-size="18">⚙️</text>
+            <rect x="0"   y="426" width="105" height="34" fill="#A8552B"/>
+            <rect x="107" y="426" width="105" height="34" fill="#EDE3C8"/>
+            <rect x="214" y="426" width="106" height="34" fill="#C8862E"/>
+          </g>
+        </svg>
+      </div>
+      <div class="screen-caption">After — 4本柱で統一されたフィード</div>
+    </div>
   </div>
 </section>
 
